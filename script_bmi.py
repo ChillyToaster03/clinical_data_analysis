@@ -17,6 +17,8 @@ table1 = (
         Total_Patients=("caseid", "count"),
         Average_Age=("age", "mean"),
         Average_BMI=("bmi", "mean"),
+        Male_Count=("sex", lambda x: (x == "M").sum()),
+        Female_Count=("sex", lambda x: (x == "F").sum()),
     )
     .round(1)
 )
