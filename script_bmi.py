@@ -19,6 +19,7 @@ table1 = (
         Average_BMI=("bmi", "mean"),
         Male_Count=("sex", lambda x: (x == "M").sum()),
         Female_Count=("sex", lambda x: (x == "F").sum()),
+        Average_Preoperative_Hb=("preop_hb", "mean"),
     )
     .round(1)
 )
